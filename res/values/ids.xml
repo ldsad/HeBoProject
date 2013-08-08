@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <item name="load_activity" type="id">false</item>
+      
+    <item name="column_scrollview" type="id"/>
+    <item name="column_slide_bar" type="id"/>
+    <item name="column_title_layout" type="id"/>
+    <item name="column_navi" type="id"/>
+    <item name="column_to_left" type="id"/>
+    <item name="column_to_right" type="id"/>
+    <item name="scroll_layout" type="id"/>
+    <item name="vote" type="id"/>
+    <item name="comment" type="id"/>
+    <item name="picture" type="id"/>
+    <item name="topic" type="id"/>
+    <item name="news" type="id"/>
+    <item name="head_lines" type="id"/>
+    <item name="sport" type="id"/>
+    <item name="entertainment" type="id"/>
+    <item name="finance" type="id"/>
+    <item name="technology" type="id"/>
+    <item name="more" type="id"/>
+     <item name="mapMenuListView" type="id"></item>
+       <item name="myMapView" type="id"></item>
+</resources>

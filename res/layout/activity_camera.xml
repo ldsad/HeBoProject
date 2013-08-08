@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include layout="@layout/activity_second_title"/>
+    
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_photo_button" />
+
+    <LinearLayout
+        android:id="@+id/layout_photo_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/cameraBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_alert_dialog_button_normal"
+            android:text="拍照" />
+
+        <Button
+            android:id="@+id/selectImgBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_alert_dialog_button_normal"
+            android:text="选取照片" />
+    </LinearLayout>
+
+</RelativeLayout>

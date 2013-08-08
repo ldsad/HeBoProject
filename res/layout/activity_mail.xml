@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/activity_second_title"/>
+    
+    <ListView
+        android:id="@+id/lv_mailaccountlist" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ></ListView>
+    
+    <Button 
+        android:id="@+id/btn_addmailaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加邮箱"
+        />
+
+</LinearLayout>

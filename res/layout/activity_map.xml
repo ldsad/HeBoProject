@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!--  <include layout="@layout/activity_title" />-->
+
+    <TextView
+        android:id="@+id/showAddr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="15.0dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/filter_btn_bg" >
+
+        <Button
+            android:id="@+id/btn_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fav_title_normal"
+            android:drawableRight="@drawable/ic_arrow_down_black"
+            android:text="500米" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_filter_divider" />
+
+        <Button
+            android:id="@+id/selectSortBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fav_title_normal"
+            android:drawableRight="@drawable/ic_arrow_down_black"
+            android:text="选择类别" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_filter_divider" />
+
+        <Button
+            android:id="@+id/mapOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fav_title_normal"
+            android:drawableRight="@drawable/ic_arrow_down_black"
+            android:text="地图选项" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_filter_divider" />
+    </LinearLayout>
+
+    <!--
+     <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapsView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    -->
+
+    <com.hebo.heboproject.utils.MyMapView
+        android:id="@+id/bmapsView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/firstWeatherImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/weatherCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上海市" />
+
+            <TextView
+                android:id="@+id/firstWeatherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left" >
+
+        <TableRow android:gravity="center" >
+
+            <TextView
+                android:id="@+id/weekText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/weekText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/weekText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+			
+            <!--  
+            <TextView
+                android:id="@+id/weekText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/weekText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+        </TableRow>
+
+        <TableRow android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/secondWeatherImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/duoyun" />
+
+            <ImageView
+                android:id="@+id/thirdWeatherImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/fourthWeatherImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <!--  
+            <ImageView
+                android:id="@+id/fifthWeatherImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/sixthWeatherImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />-->
+        </TableRow>
+
+        <TableRow android:gravity="center" >
+
+            <TextView
+                android:id="@+id/secondWeatherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/thirdWeatherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/fourthWeatherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+			 <!--  
+            <TextView
+                android:id="@+id/fifthWeatherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/sixthWeatherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" /> -->
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

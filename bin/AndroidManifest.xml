@@ -1,0 +1,121 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hebo.heboproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".activitys.MyApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name=".activitys.LoadActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.MapMenuActivity" >
+        </activity>
+        <activity android:name=".activitys.WelcomeActivity" >
+        </activity>
+        <activity android:name=".activitys.MainActivity" >
+        </activity>
+        <activity android:name=".activitys.HeBoInfoActivity" >
+        </activity>
+        <activity android:name=".activitys.MyWebViewActivity" >
+        </activity>
+        <activity android:name=".activitys.MyMapActivity" >
+        </activity>
+        <activity android:name=".activitys.WinActivity" >
+        </activity>
+        <activity android:name=".activitys.CameraActivity" >
+        </activity>
+        <activity android:name=".activitys.MoreActivity" >
+        </activity>
+        <activity android:name=".activitys.VideoActivity" >
+        </activity>
+        <activity android:name=".activitys.CompassActivity" >
+        </activity>
+        <activity android:name=".activitys.LightActivity" >
+        </activity>
+        <activity android:name=".activitys.ExpressActivity" >
+        </activity>
+        <activity android:name=".activitys.ExpressDetailActivity" >
+        </activity>
+        <activity android:name=".activitys.VoiceActivity" >
+        </activity>
+         <activity android:name=".activitys.MailActivity" >
+        </activity>
+        <activity
+            android:name=".activitys.DistanceActivity"
+            android:theme="@style/MyDialogStyleTop" >
+        </activity>
+        <activity
+            android:name=".activitys.MapOptionActivity"
+            android:theme="@style/MyDialogStyleTop" >
+        </activity>
+        <activity
+            android:name=".activitys.SelectSortActivity"
+            android:theme="@style/MyDialogStyleTop" >
+        </activity>
+        <activity
+            android:name="com.baidu.mapapi.search.PlaceCaterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+</manifest>

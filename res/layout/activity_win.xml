@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/winGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dip"
+        android:gravity="center"
+        android:horizontalSpacing="10dip"
+        android:numColumns="auto_fit"
+        android:paddingRight="5dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dip" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="52dp"
+        android:text="不仅仅是API调用"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:text="是API调用"
+        android:textSize="20dp" />
+
+</RelativeLayout>
